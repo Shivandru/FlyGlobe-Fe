@@ -4,7 +4,7 @@ const NavMenu = ({ isOpen, onClose, content, setSelectedLang }) => {
   return (
     isOpen &&
     content && (
-      <div className="w-fit h-auto flex flex-col gap-2 p-3 border">
+      <div className="w-fit h-auto flex flex-col gap-2 p-3 border border-[#e2e2e2] rounded-lg">
         {content.map((el, i) => (
           <button
             key={i}

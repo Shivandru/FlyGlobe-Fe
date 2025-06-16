@@ -33,6 +33,7 @@ const Navbar = () => {
         {NAV_ITEMS.map((el, i) =>
           el.dropdown ? (
             <div
+            key={i}
               className="flex justify-around items-center cursor-pointer gap-3"
               onClick={toggleMenu}
             >

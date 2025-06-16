@@ -1,11 +1,29 @@
 @import "tailwindcss";
 
+.font-dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  font-family: sans-serif;
+  /* overflow: hidden; */
+  font-family: "DM Sans", sans-serif;
+}
+
+input[type="date"].custom-date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+}
+
+input[type="date"].custom-date-input::-webkit-inner-spin-button,
+input[type="date"].custom-date-input::-webkit-clear-button {
+  display: none;
+}
+
+input[type="date"].custom-date-input {
+  color-scheme: dark;
 }
